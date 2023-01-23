@@ -1,0 +1,20 @@
+div#grid {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-auto-rows: 50px 50px 50px 50px;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        'h h h'
+        't t a'
+        'f f f';
+    grid-gap: 10px;
+    grid-auto-rows: auto;
+    grid-template-columns: auto;
+}
+
+body > header {
+    grid-area:  a;
+}

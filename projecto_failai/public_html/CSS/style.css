@@ -1,0 +1,111 @@
+html, body {
+    background-color: azure;
+}
+body {
+    display: flow;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+}
+img{
+    border-radius: 50px;
+}
+body {
+    font-family: "Roboto Light", SansSerif, "DejaVu Sans";
+    font-size: 2em;
+    font-weight: bold;
+}
+/* Extra maži įrenginiai (telefonai, 600px ir žemiau) */
+@media only screen and (max-width: 600px) {
+    .wraper {
+        background-color: darkgoldenrod;
+        width: 500px;
+        grid-template-areas:
+        'h'
+        't'
+        'f';
+    }
+    .wraper  > aside {
+        display: none;
+    }
+    body > header {
+        grid-template-areas:
+            'n';
+    }
+    header .slogan, header .logo {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .wraper {
+        background-color: darkblue;
+        width: 500px;
+        grid-template-areas:
+        'h'
+        't'
+        'f';
+    }
+    .wraper  > aside {
+        display: none;
+    }
+    body > header {
+        grid-template-areas:
+            'l'
+            'n';
+    }
+    header .slogan {
+        display: none;
+    }
+    header .logo {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .wraper {
+        background-color: darkcyan;
+        width: 700px;
+        grid-template-areas:
+        'h'
+        't'
+        'a'
+        'f';
+    }
+    body > header {
+        grid-template-areas:
+            'l s'
+            'n n';
+    }
+    .wraper  > aside {
+        display: block;
+    }
+    header .slogan {
+        display: block;
+    }
+    header .logo {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .wraper {
+        background-color: darkseagreen;
+        width: 900px;
+        grid-template-areas:
+        'h h h h'
+        't t a a'
+        'f f f f';
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .wraper {
+        background-color: white;
+        width: 1200px;
+        grid-template-areas:
+        'h h h h'
+        't t a a'
+        'f f f f';
+    }
+}

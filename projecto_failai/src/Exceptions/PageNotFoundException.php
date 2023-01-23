@@ -2,7 +2,12 @@
 
 namespace Simas\Exceptions;
 
-class PageNotFoundException
-{
+use Exception;
 
+class PageNotFoundException extends Exception
+{
+    public function __construct(string $message = 'Sorry page not found', int $code = 404)
+    {
+        parent::__construct($message, $code);
+    }
 }

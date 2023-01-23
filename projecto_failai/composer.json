@@ -1,22 +1,18 @@
 {
-    "name": "kcs/web",
-    "description": "Kaunas Coding School kurso darbas",
+    "name": "simdexo/portfolio",
+    "description": "Simo Dirzinausko portfolio",
     "type": "project",
-    "version": "0.0.2",
     "authors": [
         {
-            "name": "Tautvydas Dulskis",
-            "email": "tautvydas@dulskis.eu"
+            "name": "Simas Dirzinauskas"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
-        "php": ">=8.0",
-        "ext-pdo": "*"
+        "monolog/monolog": "2.8.0",
+        "php": ">=8.0.",
+        "larapack/dd": "^1.1"
     },
     "autoload": {
-        "psr-4": {
-            "KCS\\": "src"
-        }
+        "psr-4": {"Simas\\": "src\\", "Simdexo\\": "public_html\\Uzduotys\\Factorial\\"}
     }
 }

@@ -1,0 +1,17 @@
+html, body {
+    background-color: azure;
+}
+body {
+    display: flow;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+}
+img{
+    border-radius: 50px;
+}
+body {
+    font-family: "Roboto Light", SansSerif, "DejaVu Sans";
+    font-size: 1em;
+    font-weight: normal;
+}

@@ -1,10 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mano portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/mano.js" defer></script>
 </head>
 <body>
-$END$
+<h1>Hello, and welcome.</h1>
+<?php include 'index.php'; ?>
+<div class="message">You know what to do.</div>
+<form action="/login" method="post">
+    <input type="text" name="username" placeholder="Input username here:">
+    <input type="password" name="password" placeholder="Input password here:">
+    <input type="submit" value="Send">
+</form>
 </body>
 </html>
